@@ -1,0 +1,419 @@
+html {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-family: "Luna";
+	font-size: 30px;
+	background: #022522;
+}
+
+header {
+	box-sizing: border-box;
+	min-height: 100vh;
+	padding: 25vw 0 5vw;
+	position: relative;
+	transform-style: inherit;
+	width: 100vw; 
+}
+
+header h1 {
+	margin-top: -200px;
+}
+
+.btn {
+	-webkit-transition: 0.2s all ease;
+	transition: 0.2s all ease;
+	padding: 40px 60px;
+	border: 1px solid white;
+	margin-top: 150px;
+	margin-left: 300px;
+	color: white;
+	font-family: "Luna";
+	font-size: 25px;
+	letter-spacing: 5px;
+	display: inline-block; 
+	text-decoration-line: none;
+}
+
+.btn:hover {
+	color: black;
+	background-color: white
+}
+
+h3 {
+	text-align: center;
+	size: 50px;
+	font-weight: 10px;
+	/*margin-top: 5em;*/
+	font-family: "Segoe UI";
+}
+
+
+header, header:before{
+	background: 50% 50% / cover;	
+}
+
+header::before{
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	background-image: url(731152.jpg);
+	background-size: cover;
+	transform-origin: center center 0;
+	transform: translateZ(-1px) scale(2);
+	z-index: -1;
+	min-height: 100vh; 
+}
+
+/*.header {
+	display: grid;
+	grid-template-columns: 1fr;
+	background-color: #323232;
+	opacity: .96;
+	height: 3.5em;
+	width: 100%;
+	color: #FAFAFA;
+	text-align: center;
+	align-items: center;
+	position: fixed;
+}
+
+ul {
+	list-style-type: none:
+	margin:0;
+	padding: 0;
+}
+
+li {
+	padding-right: 3em;
+	padding-left: 3em;
+	display: inline;
+}
+*/
+header * {
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	text-align: center;
+	margin: 0;
+	padding: 1em;
+}
+
+.manda {
+	margin: 370px;
+	max-width: 100%;
+	/*height: 150px;*/
+	background: #021D1B;
+	align-self: center;
+	position: absolute;
+	padding: 0;
+
+}
+
+/*.manda h2 {
+	text-align: center;
+	font-family: "";
+}*/
+
+.manda img {
+	margin-top: 0em;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 150px;
+	width: 300px;
+	height: 300px;
+}
+
+.manda p {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 20em;
+	font-family: "Segoe UI";
+	font-size: 20px;
+	text-align: justify;
+}
+
+.content {
+	width: 1290px;
+	height: 400px;
+	margin-top: 40em;
+	margin-left: 30px;
+	margin-right: 30px;
+	background: #021D1B;
+	position: fixed;
+}
+
+.content img {
+	width: 750px;
+	height: 350px;
+	margin-top: 1em;
+	margin-left: 10px;
+}
+
+.content img:hover{
+	color: grey;
+}
+
+.text {
+	width: 500px;
+	height: 400px;
+	text-align: justify;
+	margin-left: 800px;
+	margin-top: 62em;
+	font-family: "Segoe UI";
+	font-size: 20px;
+	position: absolute;
+}
+
+.content1 {
+	width: 1290px;
+	height: 400px;
+	margin-top: 55em;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 10em;
+	background: #021D1B;
+	position: absolute;	
+}
+
+.content1 img {
+	width: 750px;
+	height: 350px;
+	margin-top: 25px;
+	margin-left: 520px;
+}
+
+.text1{
+	width: 450px;
+	height: 400px;
+	text-align: justify;
+	margin-left: 70px;
+	margin-top: 84em;
+	font-family: "Segoe UI";
+	font-size: 20px;
+	position: absolute;
+}
+
+.content2 {
+	width: 1290px;
+	height: 400px;
+	margin-top: 70em;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 10em;
+	background: #021D1B;
+	position: absolute;	
+}
+
+.content2 img {
+	width: 700px;
+	height: 350px;
+	margin-top: 25px;
+	margin-left: 20px;
+}
+
+.text2 {
+	width: 500px;
+	height: 400px;
+	text-align: justify;
+	margin-left: 780px;
+	margin-top: 107em;
+	font-family: "Segoe UI";
+	font-size: 20px;
+	position: absolute;
+}
+
+.end {
+	width: 1290px;
+	height: 600px;
+	margin-top: 87em;
+	margin-left: 30px;
+	margin-right: 30px;
+	background: #021D1B;
+	position: absolute;	
+	text-align: center;
+}
+
+.end h2 {
+	padding-top: 10px;
+}
+
+.end .foot {
+	width: 1290px;
+	height: 300px;
+	background-color: #040E0D;
+}
+
+.end .foot p {
+	text-align: center;
+	color: solid white;
+	size: 20px;
+}
+
+.menu {
+	width: 1290px;
+	height: 600px;
+	margin-top: 87em;
+	margin-left: 30px;
+	margin-right: 30px;
+	background: #021D1B;
+	position: absolute;	
+}
+
+.menu p{
+	font-family: "Segoe UI";
+	text-align: center;
+	size: 10px;
+}
+
+.gambar1 img {
+	width: 300px;
+	height: 440px;
+	margin-left: 80px;
+	margin-top: 90em;
+	border-radius: 10px 10px 10px 10px;
+	position: absolute;
+}
+
+.gambar2 img {
+	width: 400px;
+	height: 200px;
+	margin-left: 400px;
+	margin-top: 90em;
+	border-radius: 10px 10px 10px 10px;
+	position: absolute;
+}
+
+.gambar3 img {
+	width: 400px;
+	height: 200px;
+	margin-left: 825px;
+	margin-top: 90em;
+	border-radius: 10px 10px 10px 10px;
+	position: absolute;
+}
+
+.gambar4 img {
+	width: 400px;
+	height: 200px;
+	margin-left: 400px;
+	margin-top: 98em;
+	border-radius: 10px 10px 10px 10px;
+	position: absolute;
+}
+
+.gambar5 img {
+	width: 400px;
+	height: 200px;
+	margin-left: 825px;
+	margin-top: 98em;
+	border-radius: 10px 10px 10px 10px;
+	position: absolute;
+}
+
+.end {
+	width: 1290px;
+	height: 600px;
+	margin-top: 110em;
+	margin-left: 30px;
+	margin-right: 30px;
+	background: #021D1B;
+	position: absolute;	
+}
+
+.end .foot {
+	padding-top: 20px;
+	font-size: 25px;
+}
+
+/*.end .foot a {
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 180px;
+	height: 80px;
+	background: #040E0D;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: "Luna";
+	letter-spacing: 4px;
+}
+
+a:before,
+a:after,
+span:before,
+span:after
+{
+	content: '';
+	position: absolute;
+	width: 10px;
+	background: #040E0D;
+	transition: 1s;
+}	
+a:before
+{
+	top: -2px;
+	left: -2px;
+}
+a:after
+{
+	top: -2px;
+	right: -2px;
+}
+span:before
+{
+	bottom: -2px;
+	left: -2px;
+}
+span:after
+{
+	bottom: -2px;
+	right: -2px;
+}
+
+a:hover:before,
+a:hover:after,
+a:hover: span:before,
+a:hover: span:after
+{
+	width: calc( 180px / 2);
+	height: 50px;
+}*/
+
+.btn1 {
+	-webkit-transition: 0.2s all ease;
+	transition: 0.2s all ease;
+	padding: 40px 60px;
+	border: 1px solid white;
+	top: 85%;
+	left: 50%;
+	color: white;
+	font-family: "Luna";
+	font-size: 20px;
+	letter-spacing: 5px;
+	display: inline-block; 
+	text-decoration-line: none;
+}
+
+.btn1:hover {
+	color: black;
+	background-color: white
+}
